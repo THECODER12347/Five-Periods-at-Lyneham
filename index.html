@@ -41,22 +41,15 @@
         <p>This page has been viewed <span id="viewCount">0</span> times.</p>
         <script>
             async function updateViewCount() {
-                // Replace with your repository or website name to make a unique key
-                const uniqueKey = "https://thecoder12347.github.io/Five-Periods-at-Lyneham/"; 
-                
                 try {
-                    // Fetching from a free counting API (Example using a public count endpoint)
-                    const response = await fetch(`https://counterapi.dev${uniqueKey}/increment`);
+                    const response = await fetch('https://api.countapi.xyz/hit/five-periods-lyneham/views');
                     const data = await response.json();
-                    
-                    // Update the HTML text with the new count
                     document.getElementById('viewCount').innerText = data.value;
                 } catch (error) {
-                    document.getElementById('viewCount').innerText = error;
+                    console.error("Error fetching view count:", error);
+                    document.getElementById('viewCount').innerText = "N/A";
                 }
             }
-
-            // Run the function when the page loads
             window.onload = updateViewCount;
         </script>
         <div>
