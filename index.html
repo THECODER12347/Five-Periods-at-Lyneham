@@ -45,14 +45,14 @@
                 const uniqueKey = "https://thecoder12347.github.io/Five-Periods-at-Lyneham/"; 
                 
                 try {
-                // Fetching from a free counting API (Example using a public count endpoint)
-                const response = await fetch(`https://counterapi.dev${uniqueKey}/increment`);
-                const data = await response.json();
-                
-                // Update the HTML text with the new count
-                document.getElementById('viewCount').innerText = data.value;
+                    // Fetching from a free counting API (Example using a public count endpoint)
+                    const response = await fetch(`https://counterapi.dev${uniqueKey}/increment`);
+                    const data = await response.json();
+                    
+                    // Update the HTML text with the new count
+                    document.getElementById('viewCount').innerText = data.value;
                 } catch (error) {
-                console.error("Error fetching view count:", error);
+                    document.getElementById('viewCount').innerText = error;
                 }
             }
 
