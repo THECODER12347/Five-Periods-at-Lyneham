@@ -80,16 +80,16 @@ To reset:
     </footer>
     <script>
         async function updateViewCount() {
-            try {
-                const response = await fetch('https://countapi.mileshilliard.com/api/v1/hit/five-periods-lyneham');
-                const data = await response.json();
-                document.getElementById('viewCount').innerText = data.value;
-            } catch (error) {
-                console.error("Error fetching view count:", error);
-                document.getElementById('viewCount').innerText = error;
-            }
-        }
-        window.onload = updateViewCount;
+    try {
+        const response = await fetch('https://abacus.jasoncameron.dev/api/five-periods-lyneham');
+        const data = await response.json();
+        document.getElementById('viewCount').innerText = data.count;
+    } catch (error) {
+        console.error("Error fetching view count:", error);
+        document.getElementById('viewCount').innerText = "N/A";
+    }
+}
+window.onload = updateViewCount;
     </script>
     
     </body>
