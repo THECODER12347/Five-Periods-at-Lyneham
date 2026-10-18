@@ -1,0 +1,29 @@
+/* Enables smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Optional styling to look like a button */
+.scroll-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Default Light Mode Styles */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: sans-serif;
+}
+
+/* Automatically applies if user has Dark Mode turned on in their OS */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+}

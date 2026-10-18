@@ -1,37 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-                /* Enables smooth scrolling for the entire page */
-                html {
-                scroll-behavior: smooth;
-                }
-        
-                /* Optional styling to look like a button */
-                .scroll-btn {
-                display: inline-block;
-                padding: 10px 20px;
-                background-color: #007bff;
-                color: white;
-                text-decoration: none;
-                border-radius: 5px;
-                }
-                
-                /* Default Light Mode Styles */
-                body {
-                    background-color: #ffffff;
-                    color: #333333;
-                    font-family: sans-serif;
-                }
-        
-                /* Automatically applies if user has Dark Mode turned on in their OS */
-                @media (prefers-color-scheme: dark) {
-                    body {
-                        background-color: #121212;
-                        color: #ffffff;
-                    }
-                }
-        </style>
+        <link rel="stylesheet" href="style.css">
         <title>Five Periods at Lyneham - BETA Version</title>
     </head>
     <body>
@@ -78,19 +48,5 @@ To reset:
         <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS5ID8M5LgoeX9XCcjlvVwSh-YD1_YhRu1vgMlCNl4Gwll-BPcCfuOHHHzfVakoxXt2KBXrkJjhIv94/pubhtml?gid=282513464&amp;single=true&amp;widget=true&amp;headers=false" width="43%" height="300"></iframe>
         <div style="height: 50px;"></div>
     </footer>
-    <script>
-        async function updateViewCount() {
-    try {
-        const response = await fetch('https://abacus.jasoncameron.dev/hit/thecoder12347.github.io/five-periods-lyneham');
-        const data = await response.json();
-        document.getElementById('viewCount').innerText = data.value;
-    } catch (error) {
-        console.error("Error fetching view count:", error);
-        document.getElementById('viewCount').innerText = "N/A";
-    }
-}
-window.onload = updateViewCount;
-    </script>
-    
     </body>
 </html>
