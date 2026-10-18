@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333333;
+  background-color: #121212;
   padding: 15px 30px;
   font-family: sans-serif;
 }
@@ -58,6 +58,7 @@ body {
     background-color: #ffffff;
     color: #333333;
     font-family: sans-serif;
+    padding: 10px;
 }
 
 /* Automatically applies if user has Dark Mode turned on in their OS */
