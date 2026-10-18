@@ -27,3 +27,48 @@ body {
         color: #ffffff;
     }
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 30px;
+  font-family: sans-serif;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Turn the vertical list into a horizontal row */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+/* Style the clickable links */
+.nav-links a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+/* Hover and active states */
+.nav-links a:hover, .nav-links a.active {
+  background-color: #04AA6D;
+  border-radius: 4px;
+  color: white;
+}
