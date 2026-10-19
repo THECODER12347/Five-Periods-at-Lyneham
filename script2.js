@@ -11,4 +11,4 @@ async function addUpdateLists(){
         </div>
     </li>`;
 }
-window.onload = addUpdateLists();
+window.onload = addUpdateLists;
