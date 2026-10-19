@@ -1,0 +1,17 @@
+MR.LUCK AI ISSUES:
+
+Fixed Mr.Luck's movement - Made it from impossible to possible
+
+Fixed Mr.Luck's chance to disable systems - Made from impossible to possible
+
+Fixed Mr.Luck's chance to give maths tests - Made from impossible to possible
+-----------------------------------------------------------------------------
+OTHER BUGS:
+
+Fixed asphyxiation routine, now resets to original screen brightness
+
+Potentially fixed other issues such as game crashing on 3rd-4th night, more 
+consistent testing and debug
+-----------------------------------------------------------------------------
+Thank you to all that gave bug reports on the above issues. Without you, this 
+update wouldn't have been possible
