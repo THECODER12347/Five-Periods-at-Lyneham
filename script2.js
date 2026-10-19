@@ -3,7 +3,7 @@ async function addUpdateLists(){
     for (let i = 0; i < 5; i++) {
         var reportName = "Hello "+ i;
         var reportDescription = "Description "+i;
-        listReference.innerHTML = 
+        listReference.innerHTML += 
         `<li>
             <div class = subListItem>
                 <h1>${reportName}</h1>
