@@ -8,6 +8,19 @@
   font-family: sans-serif;
 }
 
+.reportList {
+  /* Give the list a fixed height */
+  height: 150px; 
+  
+  /* Enable vertical scrolling when content overflows */
+  overflow-y: auto; 
+  
+  /* Optional styling to make it look clean */
+  border: 1px solid #ccc;
+  padding: 10px;
+  list-style-type: none; /* Removes default bullet points if desired */
+}
+
 .logo {
   color: white;
   font-size: 24px;
