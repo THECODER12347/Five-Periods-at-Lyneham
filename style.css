@@ -10,7 +10,7 @@
 
 .reportList {
   /* Give the list a fixed height */
-  height: 600px; 
+  height: 500px; 
   
   /* Enable vertical scrolling when content overflows */
   overflow-y: auto; 
