@@ -4,8 +4,8 @@ async function addUpdateLists(){
     let print = "";
     let hasFilesLeft = true;
     let increment = 1;
+    alert(directoryRef + "updateLog" + increment + ".txt");
     while(hasFilesLeft){
-        alert(directoryRef + "updateLog" + increment + ".txt");
         let response = await fetch(directoryRef+"updateLog"+increment+".txt");
         document.getElementById("asdf").innerText = response.ok;
         if(response.ok){
