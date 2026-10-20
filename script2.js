@@ -17,6 +17,8 @@ async function addUpdateLists(){
                         <p>${reportDescription}</p>
                     </div>
                 </li>`;
+            }else{
+                hasFilesLeft = false;
             }
         });
     }
