@@ -8,7 +8,7 @@ async function addUpdateLists(){
         const response = await fetch(directoryRef+"updateLogs"+increment);
         if(response.ok){
             var reportName = "Update Log "+increment;
-            var reportDescription = response.text();
+            var reportDescription = await response.text();
             print += 
             `<li>
                 <div class = subListItem>
