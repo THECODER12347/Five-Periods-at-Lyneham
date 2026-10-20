@@ -6,7 +6,7 @@ async function addUpdateLists(){
     let increment = 1;
     while(hasFilesLeft){
         const response = await fetch(directoryRef+"updateLogs"+increment+".txt");
-        document.getElementById("asdf").innerText = response.text();
+        document.getElementById("asdf").innerText = response.ok;
         if(response.ok){
             let reportName = "Update Log "+increment;
             let reportDescription = await response.text();
