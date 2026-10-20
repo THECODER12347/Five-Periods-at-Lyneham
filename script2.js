@@ -5,22 +5,21 @@ async function addUpdateLists(){
     var hasFilesLeft = true;
     var increment = 1;
     while(hasFilesLeft){
-        fetch(directoryRef+"updateLogs"+increment).then(response =>{
-            if(response.ok){
-                var reportName = "Update Log "+increment;
-                var reportDescription = response.text();
-                print += 
-                `<li>
-                    <div class = subListItem>
-                        <h1>${reportName}</h1>
-                        <h3>Description:</h3>
-                        <p>${reportDescription}</p>
-                    </div>
-                </li>`;
-            }else{
-                hasFilesLeft = false;
-            }
-        });
+        const response = await fetch(directoryRef+"updateLogs"+increment);
+        if(response.ok){
+            var reportName = "Update Log "+increment;
+            var reportDescription = response.text();
+            print += 
+            `<li>
+                <div class = subListItem>
+                    <h1>${reportName}</h1>
+                    <h3>Description:</h3>
+                    <p>${reportDescription}</p>
+                </div>
+            </li>`;
+        }else{
+            hasFilesLeft = false;
+        }
     }
     listReference.innerHTML = print;
 }
