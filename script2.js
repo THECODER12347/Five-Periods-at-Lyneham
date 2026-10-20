@@ -4,7 +4,6 @@ async function addUpdateLists(){
     let print = "";
     let hasFilesLeft = true;
     let increment = 1;
-    alert(directoryRef + "updateLog" + increment + ".txt");
     while(hasFilesLeft){
         let response = await fetch(directoryRef+"updateLog"+increment+".txt");
         document.getElementById("asdf").innerText = response.ok;
@@ -14,9 +13,11 @@ async function addUpdateLists(){
             print += 
             `<li>
                 <div class = subListItem>
-                    <h1>${reportName}</h1>
-                    <h3>Description:</h3>
-                    <p>${reportDescription}</p>
+                    <pre>
+                        <h1>${reportName}</h1>
+                        <h3>Description:</h3>
+                        <p>${reportDescription}</p>
+                    </pre>
                 </div>
             </li>`;
             increment++;
