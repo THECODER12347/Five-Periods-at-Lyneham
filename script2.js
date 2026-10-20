@@ -1,14 +1,14 @@
 async function addUpdateLists(){
     const listReference = document.getElementById("reportList");
     const directoryRef = "./updateLogs/"
-    var print = "";
-    var hasFilesLeft = true;
-    var increment = 1;
+    let print = "";
+    let hasFilesLeft = true;
+    let increment = 1;
     while(hasFilesLeft){
         const response = await fetch(directoryRef+"updateLogs"+increment+".txt");
         if(response.ok){
-            var reportName = "Update Log "+increment;
-            var reportDescription = await response.text();
+            let reportName = "Update Log "+increment;
+            let reportDescription = await response.text();
             print += 
             `<li>
                 <div class = subListItem>
@@ -17,6 +17,7 @@ async function addUpdateLists(){
                     <p>${reportDescription}</p>
                 </div>
             </li>`;
+            increment++;
         }else{
             hasFilesLeft = false;
         }
