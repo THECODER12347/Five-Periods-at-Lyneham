@@ -1,3 +1,5 @@
+BUG FIXES:
+
 MR.LUCK AI ISSUES:
 
 Fixed Mr.Luck's movement - Made it from impossible to possible
