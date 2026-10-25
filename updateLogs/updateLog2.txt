@@ -1,0 +1,7 @@
+BUG FIXES:
+
+Fixed cam glitching out and game crashing on 3rd-4th night(apparently, it was
+just because I didn't hide a bottom level sprite properly, bruh indeed...)
+-----------------------------------------------------------------------------
+Thank you to all that gave bug reports on the above issues. Without you, this 
+update wouldn't have been possible
