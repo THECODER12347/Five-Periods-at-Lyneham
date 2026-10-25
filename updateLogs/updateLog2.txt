@@ -2,6 +2,9 @@ BUG FIXES:
 
 Fixed cam glitching out and game crashing on 3rd-4th night(apparently, it was
 just because I didn't hide a bottom level sprite properly, bruh indeed...)
+
+Fixed Mr.Luck appearing for a split second before static overlay when active
+camera is matching the shown camera
 -----------------------------------------------------------------------------
 Thank you to all that gave bug reports on the above issues. Without you, this 
 update wouldn't have been possible
